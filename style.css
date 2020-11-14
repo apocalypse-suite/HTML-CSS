@@ -1,0 +1,777 @@
+@font-face {
+  font-family: 'League Gothic';
+  src: url("fonts/LeagueGothic-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+.medium {
+  visibility: hidden;
+}
+
+.header__top__menu-small {
+  visibility: hidden;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(images/bg_mountain.png) no-repeat center top;
+  height: 840px;
+}
+.header .header__top {
+  height: 270px;
+  padding-top: 70px;
+}
+
+.sprite {
+  width: 50px;
+  height: 50px;
+  background: url(images/source_of_icons.png) no-repeat;
+  position: absolute;
+}
+
+.header__top__logo,
+.menu {
+  float: left;
+  text-transform: uppercase;
+  line-height: 34px;
+  font-family: "League Gothic", sans-serif;
+  font-size: 48px;
+}
+
+.logo--first {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.logo--second {
+  color: transparent;
+  background-image: linear-gradient(to bottom, #745083, #6c4b7a, #34263b);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu {
+  float: right;
+  text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+  font-size: 26px;
+}
+
+.menu__list {
+  margin-left: 45px;
+  float: left;
+}
+
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+}
+.menu__link:hover {
+  text-decoration: underline;
+  text-decoration-color: #edbfff;
+  cursor: pointer;
+}
+
+.header__slider-bg {
+  background: url(images/overlay.png) no-repeat center top/cover;
+}
+
+.header__slider {
+  height: 400px;
+  font-family: "League Gothic", sans-serif;
+}
+.header__slider .header__slider__text {
+  width: 55%;
+  padding-top: 70px;
+  float: left;
+  text-shadow: 3px 1px 4px #545454;
+}
+.header__slider .header__slider__text .slider__text__name {
+  color: #fff;
+  font-size: 55px;
+}
+.header__slider .header__slider__text .slider__text__slogan {
+  color: #edbfff;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.header__slider .header__slider__text .slider__text__paragraph {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 27px;
+}
+.header__slider .header__slider__image {
+  width: 270px;
+  margin-right: 5%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+.header__slider .header__slider__image .iphone {
+  position: absolute;
+  top: -15px;
+}
+.header__slider .header__slider__image .button__wrapper {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  z-index: 100;
+  top: 33%;
+  left: 50%;
+}
+.header__slider .header__slider__image .button__wrapper .button__front {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+.header__slider .header__slider__image .button__wrapper .button__center {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
+
+.slider__indicator {
+  height: 170px;
+}
+.slider__indicator .input {
+  float: right;
+  margin: 130px 100px 0 0;
+}
+.slider__indicator .input input {
+  margin-left: 10px;
+}
+
+.about {
+  height: 340px;
+  background-image: linear-gradient(#745082, #33263b);
+}
+.about .about__container {
+  height: 300px;
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 35px;
+}
+.about .about__container .about_info {
+  height: 240px;
+}
+.about .about__container .about_info .tool {
+  background-position: -400px -148px;
+}
+.about .about__container .about_info .message {
+  background-position: -327px -270px;
+}
+.about .about__container .about_info .music {
+  background-position: -487px -10px;
+}
+.about .about__container .about_info .about_info__text {
+  float: left;
+  height: 100%;
+  padding-left: 50px;
+}
+.about .about__container .about_info .about_info__text span {
+  font-size: 26px;
+  font-family: "League Gothic", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+.about .about__container .about_info .about_info__text p {
+  white-space: normal;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0;
+  height: 150px;
+  overflow: hidden;
+}
+.about .about__container .about_info .about_info__text a {
+  float: right;
+  text-decoration: none;
+}
+.about .about__container .about_info .about_info__text a span {
+  font-size: 21px;
+}
+.about .about__container .about_info .about_info__text a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.otherinfo {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 485px;
+  padding-top: 95px;
+}
+.otherinfo span {
+  text-transform: uppercase;
+  font-family: "League Gothic", sans-serif;
+  font-size: 30px;
+}
+.otherinfo .heading_first {
+  color: #454545;
+}
+.otherinfo .quote {
+  float: left;
+  width: 50%;
+  height: 330px;
+  position: relative;
+}
+.otherinfo .quote .photo {
+  background-position: -3px -502px;
+  position: absolute;
+  z-index: 10;
+  top: 15px;
+}
+.otherinfo .quote .bubble {
+  position: absolute;
+  left: 25px;
+  height: 294px;
+  width: 90%;
+  padding-right: 10px;
+}
+.otherinfo .quote .otherinfo__text {
+  max-width: 82%;
+  position: absolute;
+  z-index: 100;
+  top: 30px;
+  left: 60px;
+  overflow: hidden;
+  padding-right: 10px;
+}
+.otherinfo .quote .otherinfo__text .heading_second {
+  color: #edbfff;
+}
+.otherinfo .quote .otherinfo__text .otherinfo__text__paragraph {
+  white-space: normal;
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+}
+.otherinfo .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+.otherinfo .updates {
+  float: right;
+  width: 50%;
+  padding: 30px 30px 0 50px;
+}
+.otherinfo .updates .blog {
+  height: 55px;
+  margin: 10px 0;
+  font-family: 'open sans', sans-serif;
+  font-size: 14px;
+  color: #454545;
+}
+.otherinfo .updates .update_first {
+  background-position: -215px -320px;
+}
+.otherinfo .updates .update_second {
+  background-position: -145px -380px;
+}
+.otherinfo .updates .update_third {
+  background-position: -75px -438px;
+}
+.otherinfo .updates .text {
+  display: inline-block;
+  line-height: 23px;
+  padding-left: 60px;
+  overflow: hidden;
+}
+.otherinfo .updates .updates_heading {
+  font-weight: 800;
+  min-width: 227px;
+}
+.otherinfo .updates .updates_text {
+  font-weight: 300;
+  min-width: 227px;
+}
+.otherinfo .updates a {
+  float: right;
+  text-decoration: none;
+  color: #454545;
+}
+.otherinfo .updates a span {
+  font-size: 21px;
+}
+
+.partners {
+  width: 100%;
+  height: 120px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+  line-height: 120px;
+  text-align: center;
+}
+.partners .partners__box {
+  display: inline-block;
+  margin: 0 3%;
+}
+
+.feed {
+  width: 100%;
+  height: 395px;
+  background-color: #ececec;
+}
+.feed__content {
+  height: 100%;
+  padding-top: 95px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 4%;
+}
+.feed .box__header {
+  text-transform: uppercase;
+  font-family: "League Gothic", sans-serif;
+  font-size: 30px;
+  color: #454545;
+  padding-bottom: 10px;
+}
+.feed .box__header--main {
+  text-transform: uppercase;
+  font-family: "League Gothic", sans-serif;
+  font-size: 48px;
+  color: #454545;
+}
+.feed .box__header--main .er {
+  color: #b9b9b9;
+}
+.feed .copyright {
+  font-style: italic;
+  color: #dddddd;
+  text-shadow: 0.5px 0.9px 0 white;
+  padding: 10px 0;
+}
+.feed .box__text {
+  font-family: 'open sans', sans-serif;
+  color: #aaa;
+  font-size: 18px;
+  line-height: 24px;
+  max-height: 190px;
+  overflow: hidden;
+}
+
+.footer {
+  background: url(images/bg%20footer.png) no-repeat center center/cover;
+  height: 110px;
+  padding-top: 50px;
+}
+.footer .menu--footer {
+  float: left;
+  text-transform: uppercase;
+  font-family: "League Gothic", sans-serif;
+  text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  height: 25px;
+}
+.footer .menu__list--footer {
+  margin-right: 45px;
+  float: left;
+}
+.footer .menu__link--footer {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .menu__link--footer:hover {
+  text-decoration: underline;
+  text-decoration-color: #edbfff;
+  cursor: pointer;
+}
+.footer .design {
+  float: right;
+  font-family: 'open sans', sans-serif;
+  color: #fff;
+  text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+.footer .design .strong {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .large {
+    display: none;
+  }
+
+  .medium {
+    visibility: visible;
+  }
+
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .header {
+    height: 800px;
+  }
+  .header .header__top {
+    height: 245px;
+    padding-top: 70px;
+  }
+  .header .header__top .menu {
+    float: left;
+    margin-top: 20px;
+  }
+  .header .header__top .menu .menu__list {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+
+  .header__slider .header__slider__text {
+    width: 350px;
+  }
+  .header__slider .header__slider__text .slider__text__slogan {
+    font-size: 24px;
+  }
+  .header__slider .header__slider__image {
+    margin-right: 0;
+  }
+
+  .about .about__container .about_info .about_info__text p {
+    line-height: 21px;
+  }
+
+  .otherinfo .quote .otherinfo__text {
+    max-width: 250px;
+  }
+  .otherinfo .quote .otherinfo__text .heading_second {
+    display: block;
+  }
+  .otherinfo .quote .otherinfo__text .otherinfo__text__paragraph {
+    margin-top: 10px;
+    max-height: 145px;
+  }
+  .otherinfo .quote .bubble {
+    width: 85%;
+  }
+  .otherinfo .dots {
+    float: none;
+    text-align: center;
+  }
+  .otherinfo .updates .text {
+    line-height: 19px;
+  }
+
+  .feed__content {
+    padding: 90px 0;
+  }
+
+  .partners .partners__box {
+    margin: 0 2%;
+  }
+
+  .footer {
+    height: 200px;
+  }
+  .footer .menu--footer {
+    padding-right: 20px;
+  }
+  .footer .design {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .header {
+    height: 577px;
+  }
+  .header .header__top .menu .menu__list {
+    margin-right: 25px;
+  }
+  .header .header__slider-bg {
+    height: 245px;
+  }
+  .header .header__slider-bg .header__slider__text {
+    padding-top: 20px;
+  }
+  .header .header__slider-bg .header__slider__text .slider__text__paragraph .medium {
+    overflow: hidden;
+  }
+  .header .header__slider-bg .header__slider__image {
+    width: 190px;
+    height: 250px;
+  }
+  .header .header__slider-bg .header__slider__image .iphone {
+    height: 305px;
+  }
+  .header .header__slider-bg .header__slider__image .button__wrapper {
+    top: 30%;
+    left: 45%;
+  }
+  .header .slider__indicator {
+    height: 70px;
+  }
+  .header .slider__indicator .input {
+    margin: 40px 45px 0 0;
+  }
+
+  .about {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .about .about__container {
+    height: auto;
+    grid-template-columns: 100%;
+  }
+  .about .about__container .about_info {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .about .about__container .about_info .about_info__text p {
+    height: 60px;
+  }
+  .about .about__container .about_info .about_info__text .about_info__link {
+    margin: 5px 0 0 10px;
+  }
+
+  .otherinfo {
+    height: 730px;
+  }
+  .otherinfo .otherinfo__container .quote {
+    width: 100%;
+  }
+  .otherinfo .otherinfo__container .quote .bubble {
+    width: 95%;
+  }
+  .otherinfo .otherinfo__container .quote .otherinfo__text {
+    max-width: 470px;
+  }
+  .otherinfo .otherinfo__container .quote .otherinfo__text .heading_second {
+    display: inline;
+  }
+  .otherinfo .otherinfo__container .quote .otherinfo__text .otherinfo__text__paragraph {
+    margin-top: 10px;
+    max-height: 145px;
+  }
+  .otherinfo .otherinfo__container .updates {
+    width: 100%;
+    padding: 20px 40px;
+  }
+
+  .feed {
+    height: auto;
+    padding: 30px 0;
+  }
+  .feed__content {
+    height: auto;
+    grid-template-columns: 100%;
+  }
+  .feed__content .feed__box {
+    margin: 20px 0;
+  }
+  .feed__content .feed__box .box__header {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .medium {
+    display: none;
+  }
+
+  .header__top__menu-small {
+    visibility: visible;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .wrapper {
+    max-width: 480px;
+    padding: 0 20px;
+  }
+
+  .header .header__top {
+    padding-top: 60px;
+  }
+  .header .header__top .header__top__logo {
+    float: none;
+    text-align: center;
+  }
+  .header .header__top .header__top__menu-large-medium {
+    display: none;
+  }
+  .header .header__top .menu--small {
+    display: inline-block;
+    background-color: rgba(53, 20, 86, 0.78);
+    position: relative;
+    z-index: 500;
+    width: 245px;
+    border: 1px solid #16002D;
+    border-radius: 7px;
+    font-family: "League Gothic", sans-serif;
+    font-size: 20px;
+  }
+  .header .header__top .menu--small .menu__item {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+  .header .header__top .menu--small .menu__item .menu__link {
+    height: 46px;
+  }
+  .header .header__top .submenu .menu__link {
+    height: 38px;
+  }
+  .header .header__top .menu--small .menu__item:hover {
+    background-color: rgba(33, 5, 60, 0.89);
+  }
+  .header .header__top .menu--small .menu__item {
+    height: 47px;
+    line-height: 47px;
+  }
+  .header .header__top .submenu {
+    position: relative;
+    display: none;
+    z-index: 1000;
+  }
+  .header .header__top .submenu .menu__item {
+    height: 42px;
+    line-height: 42px;
+    border-top: 1px solid #54405c;
+  }
+  .header .header__top .menu--small:hover .submenu {
+    display: block;
+  }
+  .header .header__slider .header__slider__text {
+    width: 230px;
+    padding-top: 80px;
+  }
+  .header .header__slider .header__slider__text .slider__text__name {
+    font-size: 35px;
+  }
+  .header .header__slider .header__slider__text .slider__text__slogan {
+    font-size: 18px;
+  }
+  .header .header__slider .header__slider__image {
+    width: 180px;
+    height: 250px;
+  }
+  .header .header__slider .header__slider__image .iphone {
+    height: 305px;
+  }
+  .header .header__slider .header__slider__image .button__wrapper {
+    top: 30%;
+    left: 47%;
+  }
+  .header .slider__indicator .input {
+    margin: 40px 0px 0 0;
+    float: none;
+    text-align: center;
+  }
+
+  .otherinfo {
+    padding-top: 70px;
+  }
+  .otherinfo .otherinfo__container .quote .otherinfo__text {
+    max-width: 360px;
+  }
+  .otherinfo .otherinfo__container .quote .otherinfo__text .otherinfo__text__paragraph {
+    max-height: 190px;
+    line-height: 22px;
+  }
+
+  .partners {
+    height: 233px;
+  }
+  .partners .partners__box {
+    margin: 0 5%;
+  }
+
+  .footer .menu--footer {
+    padding-right: 0;
+    float: none;
+  }
+  .footer .menu--footer .menu_cont .menu__list--footer {
+    margin: 0 11px 0 10px;
+  }
+  .footer .design {
+    margin-top: 35px;
+    float: none;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    height: 515px;
+  }
+  .header .header__top .menu--small {
+    background: none;
+    border: none;
+  }
+  .header .header__top .menu--small .menu__link {
+    font-size: 25px;
+  }
+  .header .header__top .menu--small .menu__item:hover {
+    background: none;
+  }
+  .header .header__top .menu--small .submenu .menu__item {
+    border: none;
+  }
+  .header .header__slider-bg {
+    background: none;
+    height: 150px;
+  }
+  .header .header__slider-bg .header__slider {
+    height: 100px;
+    text-align: center;
+  }
+  .header .header__slider-bg .header__slider .header__slider__text {
+    float: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .header .header__slider-bg .header__slider .header__slider__text .slider__text__slogan {
+    font-size: 22px;
+  }
+  .header .header__slider-bg .header__slider .header__slider__image {
+    display: none;
+  }
+  .header .slider__indicator .input {
+    float: none;
+  }
+
+  .otherinfo .otherinfo__container .quote .otherinfo__text .heading_first {
+    display: block;
+    font-size: 25px;
+  }
+  .otherinfo .otherinfo__container .quote .otherinfo__text .heading_second {
+    font-size: 25px;
+  }
+  .otherinfo .otherinfo__container .quote .otherinfo__text .otherinfo__text__paragraph {
+    max-height: 155px;
+  }
+  .otherinfo .otherinfo__container .updates {
+    padding: 10px 0 0 0;
+  }
+
+  .partners {
+    height: 422px;
+    padding-top: 30px;
+  }
+
+  .feed {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 20px;
+  }
+  .footer .footer__content .menu--footer {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
